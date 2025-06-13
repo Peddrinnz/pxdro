@@ -1,0 +1,56 @@
+"use client"
+import { useLanguage } from "@/hooks/use-language"
+import { useEffect, useState } from "react"
+
+export function Header() {
+  const [isDark, setIsDark] = useState(false)
+  const { language, setLanguage, t } = useLanguage()
+
+  useEffect(() => {
+    const theme = localStorage.getItem("theme")
+    if (theme === "dark") {
+      setIsDark(true)
+      document.documentElement.classList.add("dark")
+    }
+  }, [])
+
+  const toggleTheme = () => {
+    const newTheme = !isDark
+    setIsDark(newTheme)
+
+    if (newTheme) {
+      document.documentElement.classList.add("dark")
+      localStorage.setItem("theme", "dark")
+    } else {
+      document.documentElement.classList.remove("dark")
+      localStorage.setItem("theme", "light")
+    }
+  }
+
+  return (
+    <header className="header">
+      <div className="header-content">
+        <div className="logo">
+          <div className="logo-icon">P</div>
+          <span className="logo-text">Pedro</span>
+        </div>
+
+        <nav className="nav">
+          <a href="#inicio">{t("nav.home")}</a>
+          <a href="#sobre">{t("nav.about")}</a>
+          <a href="#stacks">{t("nav.stacks")}</a>
+          <a href="#projetos">{t("nav.projects")}</a>
+        </nav>
+
+        <div className="header-controls">
+          <button onClick={toggleTheme} className="btn">
+            {isDark ? "☀️" : "🌙"}
+          </button>
+          <button onClick={() => setLanguage(language === "pt" ? "en" : "pt")} className="btn">
+            🌍 {language.toUpperCase()}
+          </button>
+        </div>
+      </div>
+    </header>
+  )
+}
