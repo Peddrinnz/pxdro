@@ -15,16 +15,16 @@ export function Footer() {
         </p>
 
         <div className="social-links">
-          <a href="mailto:contato@pedroernesto.com" aria-label="Email">
+          <a href="mailto:pedroesnarriaga@gmail.com" aria-label="Email">
             <Mail />
           </a>
-          <a href="https://github.com/pedroernesto" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <a href="https://github.com/Peddrinnz" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <Github />
           </a>
           <a href="https://linkedin.com/in/pedroernesto" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
             <Linkedin />
           </a>
-          <a href="https://instagram.com/pedroernesto.dev" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <a href="https://instagram.com/Peddrinnz" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
             <Instagram />
           </a>
         </div>

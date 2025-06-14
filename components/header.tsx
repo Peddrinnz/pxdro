@@ -29,6 +29,13 @@ export function Header() {
     }
   }
 
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id)
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
+
   return (
     <header className="header">
       <div className="header-content">
@@ -38,10 +45,25 @@ export function Header() {
         </div>
 
         <nav className="nav">
-          <a href="#inicio">{t("nav.home")}</a>
-          <a href="#sobre">{t("nav.about")}</a>
-          <a href="#stacks">{t("nav.stacks")}</a>
-          <a href="#projetos">{t("nav.projects")}</a>
+          <a href="#inicio" onClick={(e) => {
+            e.preventDefault()
+            scrollToSection('inicio')
+          }}>{t("nav.home")}</a>
+          
+          <a href="#sobre" onClick={(e) => {
+            e.preventDefault()
+            scrollToSection('sobre')
+          }}>{t("nav.about")}</a>
+          
+          <a href="#stacks" onClick={(e) => {
+            e.preventDefault()
+            scrollToSection('stacks')
+          }}>{t("nav.stacks")}</a>
+          
+          <a href="#projetos" onClick={(e) => {
+            e.preventDefault()
+            scrollToSection('projetos')
+          }}>{t("nav.projects")}</a>
         </nav>
 
         <div className="header-controls">
