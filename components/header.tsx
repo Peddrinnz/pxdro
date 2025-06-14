@@ -1,6 +1,8 @@
 "use client"
 import { useLanguage } from "@/hooks/use-language"
+import { Moon, Sun } from 'lucide-react'
 import { useEffect, useState } from "react"
+import { FaLanguage } from 'react-icons/fa'
 
 export function Header() {
   const [isDark, setIsDark] = useState(false)
@@ -31,8 +33,8 @@ export function Header() {
     <header className="header">
       <div className="header-content">
         <div className="logo">
-          <div className="logo-icon">P</div>
-          <span className="logo-text">Pedro</span>
+          <div className="logo-icon">PE</div>
+          <span className="logo-text">Pedro Ernesto</span>
         </div>
 
         <nav className="nav">
@@ -44,10 +46,10 @@ export function Header() {
 
         <div className="header-controls">
           <button onClick={toggleTheme} className="btn">
-            {isDark ? "☀️" : "🌙"}
+            {isDark ? <Sun size={20} /> : <Moon size={20} />}
           </button>
           <button onClick={() => setLanguage(language === "pt" ? "en" : "pt")} className="btn">
-            🌍 {language.toUpperCase()}
+            <FaLanguage size={20} /> {language.toUpperCase()}
           </button>
         </div>
       </div>

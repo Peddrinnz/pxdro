@@ -31,6 +31,10 @@ const translations = {
     "projects.title": "Projetos",
     "projects.project": "Projeto",
     "projects.description": "Descrição do projeto desenvolvido com as melhores práticas e tecnologias modernas.",
+    "footer.transformTitle": "Transforme sua ideia em algo real",
+    "footer.transformDescription": "Gosto de transformar ideias em interfaces modernas, funcionais e com personalidade própria. Se você tem um projeto em mente ou quer tirar do papel com qualidade e criatividade, entre em contato - podemos criar algo juntos.",
+    "footer.resumeButton": "Meu currículo",
+    "footer.copyright": "Todos os direitos reservados",
   },
   en: {
     "nav.home": "Home",
@@ -52,6 +56,10 @@ const translations = {
     "projects.title": "Projects",
     "projects.project": "Project",
     "projects.description": "Project description developed with best practices and modern technologies.",
+    "footer.transformTitle": "Turn your idea into something real",
+    "footer.transformDescription": "I enjoy transforming ideas into modern, functional interfaces with personality. If you have a project in mind or want to bring it to life with quality and creativity, get in touch - we can create something together.",
+    "footer.resumeButton": "My resume",
+    "footer.copyright": "All rights reserved",
   },
 }
 
