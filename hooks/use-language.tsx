@@ -23,10 +23,10 @@ const translations = {
     "hero.cta.secondary": "Contato",
     "about.title": "Sobre Mim",
     "about.description1":
-      "Sou um desenvolvedor front-end apaixonado por criar experiências digitais incríveis. Com foco em React e Next.js, desenvolvo aplicações modernas e responsivas.",
+      "Nasci em 2004, no estado de Mato Grosso do Sul, Brasil. Atualmente estou cursando Analise e Desenvolvimento de Sistemas no Instituto Federal de Mato Grosso do Sul (IFMS).",
     "about.description2":
-      "Sempre em busca de novos desafios e aprendizados, acredito que a tecnologia pode transformar vidas e criar um impacto positivo no mundo.",
-    "about.skills.title": "Principais Habilidades",
+    "Iniciei minha jornada na área de tecnologia explorando diferentes nichos da programação, até me encontrar no desenvolvimento web. Além disso, tenho grande interesse por UI/UX design e criação de interfaces visuais atrativas.",
+    "about.skills.title": "Habilidades",
     "stacks.title": "Tecnologias",
     "projects.title": "Projetos",
     "projects.project": "Projeto",
@@ -48,9 +48,9 @@ const translations = {
     "hero.cta.secondary": "Contact",
     "about.title": "About Me",
     "about.description1":
-      "I'm a front-end developer passionate about creating incredible digital experiences. With a focus on React and Next.js, I develop modern and responsive applications.",
+    "I was born in 2004 in Mato Grosso do Sul, Brazil. I'm currently pursuing a degree in Systems Analysis and Development at the Federal Institute of Mato Grosso do Sul (IFMS).",
     "about.description2":
-      "Always looking for new challenges and learning opportunities, I believe that technology can transform lives and create a positive impact in the world.",
+    "My technology journey started with exploring different programming domains, ultimately leading me to specialize in web development. I'm particularly passionate about UI/UX design and crafting visually engaging interfaces.",
     "about.skills.title": "Main Skills",
     "stacks.title": "Technologies",
     "projects.title": "Projects",
