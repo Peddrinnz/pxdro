@@ -1,7 +1,7 @@
 "use client"
 import { useLanguage } from "@/hooks/use-language"
 import { useEffect, useState } from 'react'
-import { FaAws, FaFigma, FaNodeJs, FaReact } from 'react-icons/fa'
+import { FaJava, FaPhp,  FaFigma, FaNodeJs, FaReact } from 'react-icons/fa'
 import { SiDocker, SiGit, SiJavascript, SiNextdotjs, SiTailwindcss, SiTypescript } from 'react-icons/si'
 import 'swiper/css'
 import 'swiper/css/pagination'
@@ -17,7 +17,8 @@ const stacks = [
   { name: "Tailwind", icon: <SiTailwindcss size={24} />, shortName: "Tail" },
   { name: "Git", icon: <SiGit size={24} /> },
   { name: "Figma", icon: <FaFigma size={24} /> },
-  { name: "AWS", icon: <FaAws size={24} /> },
+  { name: "Java", icon: <FaJava size={24} /> },
+  { name: "PHP", icon: <FaPhp size={24} /> },
   { name: "Docker", icon: <SiDocker size={24} /> },
 ]
 

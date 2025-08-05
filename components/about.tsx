@@ -16,11 +16,11 @@ export function About() {
           <div className="skills-card">
             <h3 className="skills-title">{t("about.skills.title")}</h3>
             <ul className="skills-list">
-              <li>• React & Next.js</li>
-              <li>• TypeScript</li>
-              <li>• Tailwind CSS</li>
-              <li>• Node.js</li>
-              <li>• Git & GitHub</li>
+              <li className="skill1">{t("about.skills.skill1")}</li>
+              <li className="skill2">{t("about.skills.skill2")}</li>
+              <li className="skill3">{t("about.skills.skill3")}</li>
+              <li className="skill4">{t("about.skills.skill4")}</li>
+              <li className="skill5">{t("about.skills.skill5")}</li>
             </ul>
           </div>
         </div>

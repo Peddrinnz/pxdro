@@ -310,8 +310,8 @@ html {
 
 .project-image {
   width: 100%;
-  height: 12rem;
   object-fit: cover;
+  display: block;
 }
 
 .project-content {
@@ -399,6 +399,11 @@ html {
   .btn-primary, .btn-secondary {
     padding: 0.75rem 1rem;
     width: 100%;
+  }
+
+  .project-buttons .btn-small {
+    width: 100%;
+    justify-content: center;
   }
 }
 

@@ -21,7 +21,7 @@ export function Footer() {
           <a href="https://github.com/Peddrinnz" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <Github />
           </a>
-          <a href="https://linkedin.com/in/pedroernesto" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <a href="https://www.linkedin.com/in/pedroernestoberesn" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
             <Linkedin />
           </a>
           <a href="https://instagram.com/Peddrinnz" target="_blank" rel="noopener noreferrer" aria-label="Instagram">

@@ -1,21 +1,34 @@
 "use client"
 import { useLanguage } from "@/hooks/use-language"
+import { title } from "process"
 
 const projects = [
   {
     id: 1,
-    image: "/placeholder.svg?height=200&width=300",
-    tech: ["React", "Next.js", "Tailwind"],
+    title: "TCC - Sistema KDÊ",
+    description: "Sistema de inventário e localização de bens do IFMS com interface moderna e responsiva.",
+    image: "/kde.png",
+    tech: ["React", "Next.js", "Tailwind CSS", "TypeScript", "Node.js", "Prisma", "PostgreSQL"],
+    demoUrl: "https://preview.viniccius.com.br",
+    codeUrl: "https://github.com/Peddrinnz/tcc",
   },
   {
     id: 2,
-    image: "/placeholder.svg?height=200&width=300",
-    tech: ["TypeScript", "Node.js", "MongoDB"],
+    title: "Projeto em Java - Sistema de Biblioteca",
+    description: "Sistema de gerenciamento de biblioteca com funcionalidades de empréstimo e devolução.",
+    image: "/java_ui.png",
+    tech: ["Java", "Docker", "Hibernate", "Swing UI"],
+    demoUrl: "https://github.com/Peddrinnz/java_ui",
+    codeUrl: "https://github.com/Peddrinnz/java_ui",
   },
   {
     id: 3,
-    image: "/placeholder.svg?height=200&width=300",
-    tech: ["React", "Firebase", "Styled Components"],
+    title: "Projeto em PHP - SIGINF",
+    description: "Sistema interno da EMBRAPA para gerenciamento de informações de inventário.",
+    image: "/siginf.png",
+    tech: ["PHP", "MySQL", "CSS", "JavaScript", "HTML"],
+    demoUrl: "https://github.com/Peddrinnz/siginf",
+    codeUrl: "https://github.com/Peddrinnz/siginf",
   },
 ]
 
@@ -31,14 +44,14 @@ export function Projects() {
             <div key={project.id} className="project-card">
               <img
                 src={project.image || "/placeholder.svg"}
-                alt={`${t("projects.project")} ${project.id}`}
+                alt={project.title || `Projeto ${project.id}`}
                 className="project-image"
               />
               <div className="project-content">
-                <h3 className="project-title">
-                  {t("projects.project")} {project.id}
-                </h3>
-                <p className="project-description">{t("projects.description")}</p>
+                {project.title && <h3 className="project-title">{project.title}</h3>}
+                {project.description && (
+                  <p className="project-description">{project.description}</p>
+                )}
                 <div className="project-tech">
                   {project.tech.map((tech) => (
                     <span key={tech} className="tech-tag">
@@ -47,8 +60,26 @@ export function Projects() {
                   ))}
                 </div>
                 <div className="project-buttons">
-                  <button className="btn-small btn-outline">📚 Code</button>
-                  <button className="btn-small btn-primary">🔗 Demo</button>
+                  {project.codeUrl && (
+                    <a
+                      href={project.codeUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn-small btn-outline"
+                    >
+                      📚 Code
+                    </a>
+                  )}
+                  {project.demoUrl && (
+                    <a
+                      href={project.demoUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn-small btn-primary"
+                    >
+                      🔗 Demo
+                    </a>
+                  )}
                 </div>
               </div>
             </div>
